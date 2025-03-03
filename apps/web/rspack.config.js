@@ -1,5 +1,3 @@
-import path from 'node:path';
-
 export default defineConfig({
   // ...
   module: {
@@ -10,16 +8,6 @@ export default defineConfig({
         type: 'css',
       },
       // ...
-    ],
-  },
-  source: {
-    include: [
-      {
-        and: [
-          path.resolve(__dirname, '../../packages/ui'),
-          { not: /[\\/]node_modules[\\/]/ },
-        ],
-      },
     ],
   },
 });
