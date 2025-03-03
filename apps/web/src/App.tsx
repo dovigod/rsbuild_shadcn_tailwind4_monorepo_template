@@ -1,6 +1,11 @@
 import './App.css';
 
 import { Button } from '@packages/ui/components/button';
+import {
+  Alert,
+  AlertTitle,
+  AlertDescription,
+} from '@packages/ui/components/alert';
 const H = () => {
   return <h1 className="text-3xl font-bold underline red">Hello world!</h1>;
 };
@@ -12,6 +17,11 @@ const App = () => {
         <p>Start building amazing things with Rsbuild.</p>
         <H />
         <Button>Hello world</Button>
+
+        <Alert>
+          <AlertTitle>This is Alert</AlertTitle>
+          <AlertDescription> description</AlertDescription>
+        </Alert>
       </main>
     </div>
   );
